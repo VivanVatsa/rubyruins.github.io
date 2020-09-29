@@ -1,0 +1,17 @@
+:root  {
+	--background-primary: white;
+	--background-secondary: rgb(230, 230, 230);
+	--font-primary: black;
+	--font-secondary: rgb(148, 148, 148);
+	--color-one: #9E2AD0;
+	--color-two: #1EC0A2;
+}
+
+[data-theme="dark"] {
+	--background-primary:#101029;
+	--background-secondary: rgb(0, 0, 87);
+	--font-primary: white;
+	--font-secondary: rgb(92, 90, 105);
+	--color-one: #2977b8;
+	--color-two: rgb(255, 166, 0);
+}
