@@ -5,6 +5,8 @@
 	--font-secondary: rgb(148, 148, 148);
 	--color-one: #9E2AD0;
 	--color-two: #1EC0A2;
+	--headings-font: 'Poppins', sans-serif;
+	--paragraph-font: 'Roboto Mono', monospace;
 }
 
 [data-theme="dark"] {

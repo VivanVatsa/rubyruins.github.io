@@ -1,17 +1,14 @@
 nav {
 	background-color: var(--background-primary);
 	color: var(--font-secondary);	
-	margin: 0 5rem 0 5rem;	
-	padding-left: 5rem;
-	padding-right: 5rem;
 }
 
 .navbar-brand, .nav-link {
 	color: var(--font-primary) !important;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--headings-font);;
 }
 
-.nav-link:hover {
+.navbar-brand:hover, .nav-link:hover {
 	color: var(--font-primary) !important;
 	font-weight: bold;
 }
@@ -22,7 +19,11 @@ nav {
 
 body {
 	background-color: var(--background-primary);
-	font-family: 'Roboto Mono', monospace !important;
+	font-family: var(--paragraph-font) !important;
+}
+
+.hide-space {
+	display: none;
 }
 
 .content {
@@ -37,12 +38,12 @@ body {
 }
 
 .heading {
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--headings-font);;
 	font-weight: bold;
 }
 
 .top-heading {
-	font-size: 4rem;
+	font-size: 3rem;
 	color: var(--font-primary);
 }
 
@@ -181,8 +182,11 @@ strong {
 	body {
 	  background-color: var(--background-primary);
 	}
+	.hide-space {
+		display: block;
+	}
 	.section {
-		padding: 3rem;
+		padding: 1rem;
 		margin: 0.5rem;
 	}
 	.content {
@@ -196,6 +200,9 @@ strong {
 	body {
 	  background-color: var(--background-primary);
 	}
+	.hide-space {
+		display: block;
+	}
 	.section {
 		padding: 2rem;
 		margin: 1rem;
@@ -206,13 +213,12 @@ strong {
 		padding-right: 1rem;
 	}
 	.top-heading {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		color: var(--font-primary);
 	}
 	.main-content {
-		font-size: 0.75rem;
+		font-size: 0.85rem;
 	}
-	
 }
 
 ::-webkit-scrollbar {

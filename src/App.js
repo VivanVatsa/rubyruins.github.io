@@ -14,17 +14,15 @@ function App() {
 			<div className="content">
 				<div className="section" id="soumya">
 					<br></br>
-					<h1 className="heading top-heading">Hello,</h1>
-					<h1 className="heading section-heading">I'm Soumya!</h1>
+					<h1 className="heading top-heading">Hi, I'm Soumya.</h1>
+					<h4 className="heading subsection-heading">Also known as <strong className="color-one-only">@rubyruins</strong> on the internet.</h4>
 					<br></br>
 					<p className="main-content">
-						<span role="img" aria-label="woman">🙋‍♀️&nbsp;</span><strong>Who I am: </strong>A MERN stack developer + ML enthusiast + second year <a href="https://github.com/rubyruins" className="link color-one">CS</a> undergrad.
-						<br></br>
-						<span role="img" aria-label="laptop">💻&nbsp;</span><strong>What I am: </strong>A lover of graphic design, <a href="https://github.com/rubyruins" className="link color-one">writing</a> and cats.
-						<br></br>
-						<span role="img" aria-label="contact">💬&nbsp;</span><strong>Where I am: </strong>You can find me on <a href="https://github.com/rubyruins" className="link color-one">GitHub</a>, <a href="https://github.com/rubyruins" className="link color-one">LinkedIn</a>, or shoot me a quick <a href="https://github.com/rubyruins" className="link color-one">email.</a>
-						<br></br>
-						<span role="img" aria-label="star">🌟&nbsp;</span><strong>What I love: </strong>Neural networks and fantasy novels. Always exploring new ways to unite my love for coding + <span id="typed"></span>.
+						<span role="img" aria-label="woman">🙋‍♀️&nbsp;</span><strong>Who I am: </strong>ML practitioner + <a href="https://github.com/rubyruins" className="link color-one">open source</a> contributer + third year CS undergrad.
+						<br></br><br className="hide-space"></br>
+						<span role="img" aria-label="contact">💬&nbsp;</span><strong>Where I am: </strong>You can find me on <a href="https://github.com/rubyruins" className="link color-one">GitHub</a> and <a href="https://github.com/rubyruins" className="link color-one">LinkedIn.</a>Shoot me a quick <a href="https://github.com/rubyruins" className="link color-one">email</a> or download my resume <a href="https://github.com/rubyruins" className="link color-one">here.</a>
+						<br></br><br className="hide-space"></br>
+						<span role="img" aria-label="star">🌟&nbsp;</span><strong>What I love: </strong>Hackathons, neural networks and web scraping. I'm currently expanding my knowledge of natural language processing and sequence models. Always exploring new ways to unite my love for coding + <span id="typed"></span>.
 					</p>
 					<br></br> 
 				</div>
