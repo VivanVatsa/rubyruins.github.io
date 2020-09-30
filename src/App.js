@@ -29,16 +29,25 @@ function App() {
 				<div className="section" id="projects">
 					<h2 className="heading section-heading">What I <strong className="color-one-only">made</strong></h2>
 					<p className="main-content">Here's what I've been up to.</p>
-					<div className="row">
-					{projects.map(project => (
-						<Project
-							title={project.title}
-							content={project.content}
-							id={project.id}
-							url={project.url}
-							tags={project.tags}
-						/>
-						))}
+					<div className="button-group filters-button-group">
+						<button className="button is-checked" data-filter="*">All</button>
+						<button className="button" data-filter=".ml">Machine Learning</button>
+						<button className="button" data-filter=".fulldev">Full Stack</button>
+						<button className="button" data-filter=".misc">Miscellaneous</button>
+					</div>
+					<div className="grid">
+						<div className="row">
+						{projects.map(project => (
+							<Project
+								title={project.title}
+								content={project.content}
+								id={project.id}
+								url={project.url}
+								tags={project.tags}
+								categories={project.categories}
+							/>
+							))}
+						</div>
 					</div>
 				</div>
 				<div className="section" id="skills">

@@ -23,7 +23,7 @@ function Navbar() {
 						</li>
 					</ul>
 				</div>
-				<li className="navbar-brand ml-auto toggler"><i class="far fa-sun"></i></li>
+				<li className="navbar-brand ml-auto toggler"><i className="far fa-sun"></i></li>
 			</nav>
 	);
 }

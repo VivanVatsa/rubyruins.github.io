@@ -4,63 +4,72 @@ const projects = [
 		content: "Web scraping user comments off one of my books and mining the data to anaylse user sentiments towards different characters from the story.",
 		id: "p9",
 		url: "https://github.com/rubyruins/characterwise-user-sentiment",
-		tags: ["selenium", "pandas", "nlp", "matplotlib"]
+		tags: ["selenium", "pandas", "nlp", "matplotlib"],
+		categories: "ml misc"
 	},
 	{
 		title: "driver drowsiness detection", 
 		content: "A warning system to alert drowsy or tired drivers in case their eyes are closed for too long.",
 		id: "p8",
 		url: "https://github.com/rubyruins/driver-drowsiness-detection",
-		tags: ["opencv", "dlib", "tkinter", "face-recognition"]
+		tags: ["opencv", "dlib", "tkinter", "face-recognition"],
+		categories: "ml"
 	},
 	{
 		title: "producthunt clone", 
 		content: "Allows users to sign up or log in to their accounts, create new products or vote for their favourite ones.",
 		id: "p7",
 		url:"https://github.com/rubyruins/producthunt-clone",
-		tags: ["django", "mySQL", "bootstrap"]
+		tags: ["django", "mySQL", "bootstrap"],
+		categories: "fulldev"
 	},
 	{
 		title: "copinion", 
 		content: "A psychometric test to collect data of 500+ engineering students to analyse their common traits.",
 		id: "p6",
 		url: "http://co-opinion.herokuapp.com/",
-		tags: ["php", "md-bootstrap", "pandas", "seaborn"]
+		tags: ["php", "md-bootstrap", "pandas", "seaborn"],
+		categories: "fulldev"
 	},
 	{
 		title: "music recs", 
 		content: "A simple music recommendation system that suggests new songs for users with collaborative filtering.",
 		id: "p5",
 		url: "https://github.com/rubyruins/music-recs",
-		tags: ["pandas", "numpy", "jupyter", "tkinter"]
+		tags: ["pandas", "numpy", "jupyter", "tkinter"],
+		categories: "ml"
 	},
 	{
 		title: "daily journal", 
 		content: "A minimalistic journal that allows users to keep track of their day and their thoughts.",
 		id: "p4",
 		url: "https://github.com/rubyruins/daily-journal",
-		tags: ["mongodb", "nodeJS", "expressjs"]
+		tags: ["mongodb", "nodeJS", "expressjs"],
+		categories: "fulldev"
 	},
 	{
 		title: "secrets", 
 		content: "Lets users anonymously submit their secrets. A pet project to experiment with authentication.",
 		id: "p3",
 		url: "https://github.com/rubyruins/secrets",
-		tags: ["google-oauth", "passportJS", "nodeJSexpress"]
+		tags: ["google-oauth", "passportJS", "nodeJSexpress"],
+		categories: "fulldev"
 	},
 	{
 		title: "criminal offense", 
 		content: "An interactive dashboard to visualise San Fransisco crimes by class, location and time.",
 		id: "p2",
 		url: "https://github.com/rubyruins/criminal-offense-2.0",
-		tags: ["chartsJS", "flask", "bootstrap", "pandas"]
+		tags: ["chartsJS", "flask", "bootstrap", "pandas"],
+		categories: "ml misc"
 	},
 	{
 		title: "keeper", 
 		content: "A Google Keep clone to create, edit and delete to-do lists with Material UI.",
 		id: "p1",
 		url: "https://github.com/rubyruins/keeper",
-		tags: ["reactJS", "material-ui"]
+		tags: ["reactJS", "material-ui"],
+		categories: "fulldev"
 	}];
 
 const languages = [

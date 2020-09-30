@@ -20,6 +20,7 @@
 	<script src="vendor/jquery/jquery.slim.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="custom/js/typed.min.js"></script>
+	<script src="custom/js/isotope.pkgd.min.js"></script>
 	<script>
 		function newTyped(){}$(function(){$("#typed").typed({
 			// Change to edit type effect
@@ -57,6 +58,39 @@
 			});
 		});
 	</script>
+	<script>
+		$(document).ready(function() {
+			// external js: isotope.pkgd.js
+
+			// init Isotope
+			var iso = new Isotope( '.grid', {
+			itemSelector: '.element-item',
+			layoutMode: 'fitRows'
+			});
+
+			// filter functions
+			var filterFns = {};
+
+			// bind filter button click
+			var filtersElem = document.querySelector('.filters-button-group');
+			filtersElem.addEventListener( 'click', function( event ) {
+			// only work with buttons
+			if ( !matchesSelector( event.target, 'button' ) ) {
+				return;
+			}
+			var filterValue = event.target.getAttribute('data-filter');
+			// use matching filter function
+			filterValue = filterFns[ filterValue ] || filterValue;
+			iso.arrange({ filter: filterValue });
+			});
+
+			// change is-checked class on buttons
+			var buttonGroups = document.querySelectorAll('.button-group');
+			for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+				var buttonGroup = buttonGroups[i];
+				radioButtonGroup( buttonGroup );
+			}
+	});
+	</script>
 </body>
 </html>
-	
