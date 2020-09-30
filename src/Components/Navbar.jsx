@@ -7,7 +7,7 @@ function Navbar() {
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-					<a className="navbar-brand" href="#soumya"><span role="img" aria-label="home">~/home</span></a>
+					<a className="navbar-brand color-one-only" href="#soumya"><span role="img" aria-label="home">~/home</span></a>
 					<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 						<li className="nav-item">
 							<a className="nav-link color-one-only" href="#projects">~/projects</a>

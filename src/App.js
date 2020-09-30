@@ -33,9 +33,9 @@ function App() {
 						<button className="button is-checked" data-filter="*">All</button>
 						<button className="button" data-filter=".ml">Machine Learning</button>
 						<button className="button" data-filter=".fulldev">Full Stack</button>
-						<button className="button" data-filter=".misc">Miscellaneous</button>
+						<button className="button" data-filter=".misc">Misc.</button>
 					</div>
-					<div className="grid">
+					<div className="isotopeGrid">
 						<div className="row">
 						{projects.map(project => (
 							<Project

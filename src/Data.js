@@ -1,7 +1,7 @@
 const projects = [
 	{
 		title: "characterwise user sentiment", 
-		content: "Web scraping user comments off one of my books and mining the data to anaylse user sentiments towards different characters from the story.",
+		content: "Scraping book comments to anaylse user sentiments to different characters.",
 		id: "p9",
 		url: "https://github.com/rubyruins/characterwise-user-sentiment",
 		tags: ["selenium", "pandas", "nlp", "matplotlib"],
@@ -9,7 +9,7 @@ const projects = [
 	},
 	{
 		title: "driver drowsiness detection", 
-		content: "A warning system to alert drowsy or tired drivers in case their eyes are closed for too long.",
+		content: "A warning system to alert drowsy or tired drivers.",
 		id: "p8",
 		url: "https://github.com/rubyruins/driver-drowsiness-detection",
 		tags: ["opencv", "dlib", "tkinter", "face-recognition"],
@@ -17,7 +17,7 @@ const projects = [
 	},
 	{
 		title: "producthunt clone", 
-		content: "Allows users to sign up or log in to their accounts, create new products or vote for their favourite ones.",
+		content: "Allows users to create and vote for their favourite products.",
 		id: "p7",
 		url:"https://github.com/rubyruins/producthunt-clone",
 		tags: ["django", "mySQL", "bootstrap"],
@@ -25,7 +25,7 @@ const projects = [
 	},
 	{
 		title: "copinion", 
-		content: "A psychometric test to collect data of 500+ engineering students to analyse their common traits.",
+		content: "A psychometric test to collect and analyse common traits of 500+ engineering students.",
 		id: "p6",
 		url: "http://co-opinion.herokuapp.com/",
 		tags: ["php", "md-bootstrap", "pandas", "seaborn"],
@@ -33,7 +33,7 @@ const projects = [
 	},
 	{
 		title: "music recs", 
-		content: "A simple music recommendation system that suggests new songs for users with collaborative filtering.",
+		content: "Recommending music through collaborative filtering.",
 		id: "p5",
 		url: "https://github.com/rubyruins/music-recs",
 		tags: ["pandas", "numpy", "jupyter", "tkinter"],
@@ -41,7 +41,7 @@ const projects = [
 	},
 	{
 		title: "daily journal", 
-		content: "A minimalistic journal that allows users to keep track of their day and their thoughts.",
+		content: "A minimalistic journal to keep track of your day.",
 		id: "p4",
 		url: "https://github.com/rubyruins/daily-journal",
 		tags: ["mongodb", "nodeJS", "expressjs"],
@@ -49,7 +49,7 @@ const projects = [
 	},
 	{
 		title: "secrets", 
-		content: "Lets users anonymously submit their secrets. A pet project to experiment with authentication.",
+		content: "Authenticate yourself to anonymously post secrets.",
 		id: "p3",
 		url: "https://github.com/rubyruins/secrets",
 		tags: ["google-oauth", "passportJS", "nodeJSexpress"],
@@ -57,7 +57,7 @@ const projects = [
 	},
 	{
 		title: "criminal offense", 
-		content: "An interactive dashboard to visualise San Fransisco crimes by class, location and time.",
+		content: "An interactive dashboard to visualise San Fransisco crimes.",
 		id: "p2",
 		url: "https://github.com/rubyruins/criminal-offense-2.0",
 		tags: ["chartsJS", "flask", "bootstrap", "pandas"],
@@ -65,7 +65,7 @@ const projects = [
 	},
 	{
 		title: "keeper", 
-		content: "A Google Keep clone to create, edit and delete to-do lists with Material UI.",
+		content: "A Google Keep clone to work with to-do lists.",
 		id: "p1",
 		url: "https://github.com/rubyruins/keeper",
 		tags: ["reactJS", "material-ui"],

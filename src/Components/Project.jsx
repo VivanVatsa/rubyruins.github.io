@@ -3,20 +3,22 @@ import classnames from 'classnames';
 
 function Project(props) {
 	return (
-		<div className={classnames("col-lg-4 col-md-6 px-0 element-item ", props.categories)} data-category="post-transition">
-			<div className="collapse-heading">
-				<h5 className="heading subsection-heading">
-					<button type="button" className="btn btn-link" data-toggle="collapse" data-target={`#${props.id}`}>
-						<i className="fa fa-plus "></i>&nbsp;&nbsp;{props.title}
-					</button>	
+	<div className={classnames("col-lg-4 col-md-6 pl-0 element-item flip-card ", props.categories)} data-category="post-transition">
+		<div className="flip-card-inner">
+	  		<div className="flip-card-front">
+			  	<h5 className="heading subsection-heading">
+			  		{props.title}
 				</h5>
-			</div>
-			<div id={props.id} className="collapse">
-				<p className="main-content">{props.content}&nbsp;<a href={props.url}><i className="fa fa-link"></i></a></p>
-			</div>
-			{props.tags.map(tag => <span className="tag">{tag}</span>)}
+				<p className="main-content">{props.content}&nbsp;</p>
+	 		</div>
+	  		<div className="flip-card-back">
+			  	{props.tags.map(tag => <span className="tag">{tag}</span>)}
+				<br></br>
+				Link: <a href={props.url}><i className="fa fa-link"></i></a>
+	  		</div>
 		</div>
-	);
+  	</div>
+  );
 }
 	
 export default Project;
