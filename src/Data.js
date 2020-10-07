@@ -91,7 +91,7 @@ const languages = [
 	},
 ];
 
-const ml = [
+const machineLearningSkills = [
 	{
 		title: "Machine Learning",
 		skill: "75%"
@@ -106,7 +106,7 @@ const ml = [
 	}
 ];
 
-const webdev = [
+const webDevelopmentSkills = [
 	{
 		title: "HTML + CSS",
 		skill: "90%"
@@ -163,7 +163,7 @@ const internships = [
 	}
 ];
 
-const res = [
+const organizations = [
 	{
 		title: "Creative Team, KJSCE Codecell | May 2019 - May 2020",
 		content: "CodeCell is the Codechef campus chapter at KJSCE Vidyavihar. Responsible for designing templates, posts and other creative work for workshops and a nationwide Hackathon (KJSCE HACK (4.0) Taught students at various workshops on Git and Github, Python Programming, etc.",
@@ -176,5 +176,23 @@ const res = [
 	}
 ];
 
-export {projects, languages, ml, webdev, tools, internships, res};
+const certifications = [
+	{
+		title: "Natural Language Processing | Deeplearning.ai, Coursera",
+		courses: ["Natural Language Processing with Probabilistic Models", "Natural Language Processing with Classification and Vector Spaces"],
+		id: "c3"
+	},
+	{
+		title: "Tensorflow Developer | Deeplearning.ai, Coursera",
+		courses: ["Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning", "Convolutional Neural Networks in TensorFlow", "Natural Language Processing in TensorFlow" , "Sequences, Time Series and Prediction"],
+		id: "c2"
+	},
+	{
+		title: "Deep Learning Specialisation | Deeplearning.ai, Coursera",
+		courses: ["Neural Networks and Deep Learning", "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization", "Structuring Machine Learning Projects", "Convolutional Neural Networks Sequence Models"],
+		id: "c1"
+	}
+]
+
+export {projects, languages, machineLearningSkills, webDevelopmentSkills, tools, internships, organizations, certifications};
   

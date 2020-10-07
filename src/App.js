@@ -4,8 +4,11 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Project from './Components/Project';
 import Skill from './Components/Skill'
-import Experience from './Components/Experience';
-import {projects, languages, ml, webdev, tools, internships, res} from './Data';
+import Internship from './Components/Internship';
+import Organization from './Components/Organization'
+import Certificate from './Components/Certificate';
+import {projects, languages, machineLearningSkills, webDevelopmentSkills, tools, internships, organizations, certifications} from './Data';
+
 
 function App() {
 	return (
@@ -66,19 +69,19 @@ function App() {
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<h5 className="heading subsection-heading link color-two-only">ML</h5>
-							{ml.map(ml => (
+							{machineLearningSkills.map(machineLearningSkill => (
 							<Skill
-								title={ml.title}
-								skill={ml.skill}
+								title={machineLearningSkill.title}
+								skill={machineLearningSkill.skill}
 							/>
 							))}
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<h5 className="heading subsection-heading link color-two-only">Web Dev</h5>
-							{webdev.map(webdev => (
+							{webDevelopmentSkills.map(webDevelopmentSkill => (
 							<Skill
-								title={webdev.title}
-								skill={webdev.skill}
+								title={webDevelopmentSkill.title}
+								skill={webDevelopmentSkill.skill}
 							/>
 							))}
 						</div>
@@ -99,26 +102,47 @@ function App() {
 					<h5 className="heading subsection-heading link color-two-only">Internships</h5>
 					
 					{internships.map(internship => (
-						<Experience
+						<Internship
 							title={internship.title}
 							content={internship.content}
 							id={internship.id}
 						/>
 					))}
 					
-					<h5 className="heading subsection-heading link color-two-only">Positions of Responsibility</h5>
+					<h5 className="heading subsection-heading link color-two-only">Organizations</h5>
 					
-					{res.map(re => (
-						<Experience
-							title={re.title}
-							content={re.content}
-							id={re.id}
+					{organizations.map(organization => (
+						<Organization
+							title={organization.title}
+							content={organization.content}
+							id={organization.id}
+						/>
+					))}
+
+					<h5 className="heading subsection-heading link color-two-only">Certifications</h5>
+					
+					{certifications.map(certification => (
+						<Certificate
+							title={certification.title}
+							courses={certification.courses}
+							id={certification.id}
 						/>
 					))}
 					
 				</div>
 				<div className="section" id="about">
 					<h2 className="heading section-heading">Who I <strong className="color-one-only">am</strong></h2>
+					<p className="main-content">I'm a lover of numbers. Here are some stats for you.</p>
+					<div className="row">
+						<div className="col-lg-8 waka">
+							<figure><embed src="https://wakatime.com/share/@73a28611-63aa-430b-ac34-67ff9da9d32f/f57f3bc7-3c85-4686-a637-7c39d74c3f3c.svg"></embed></figure>
+						</div>
+					</div>
+					<div class="row">
+						<div className="col-lg-12 p-5 pl-0 github">
+							<img src="https://ghchart.rshah.org/9E2AD0/rubyruins" alt="Github"></img>
+						</div>
+					</div>
 					<div className="row">
 						<div className="col-lg-6 col-md-6">			
 							<p className="main-content">In my free time, I love to read Greek mythology and listen to rock music. I'm a featured writer on <a href="https://github.com/rubyruins" className="link color-one">Wattpad</a>, where I write high fantasy novels for fun. You can find my work <a href="https://github.com/rubyruins" className="link color-one">@rubyruins.</a></p>

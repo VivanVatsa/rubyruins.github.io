@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Experience(props) {
+function Organization(props) {
 	return (
         <div className="row">
             <div className="col-lg-12 collapse-heading">
@@ -17,4 +17,4 @@ function Experience(props) {
 	);
 }
 	
-export default Experience;
+export default Organization;
