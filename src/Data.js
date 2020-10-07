@@ -1,11 +1,11 @@
 const projects = [
 	{
 		title: "characterwise user sentiment", 
-		content: "Scraping book comments to anaylse user sentiments to different characters.",
+		content: "Anaylse user sentiments from book comments.",
 		id: "p9",
 		url: "https://github.com/rubyruins/characterwise-user-sentiment",
 		tags: ["selenium", "pandas", "nlp", "matplotlib"],
-		categories: "ml misc"
+		categories: "ml misc feature"
 	},
 	{
 		title: "driver drowsiness detection", 
@@ -25,11 +25,11 @@ const projects = [
 	},
 	{
 		title: "copinion", 
-		content: "A psychometric test to collect and analyse common traits of 500+ engineering students.",
+		content: "A psychometric test to analyse common traits of engineering students.",
 		id: "p6",
 		url: "http://co-opinion.herokuapp.com/",
 		tags: ["php", "md-bootstrap", "pandas", "seaborn"],
-		categories: "fulldev"
+		categories: "fulldev feature"
 	},
 	{
 		title: "music recs", 
@@ -37,7 +37,7 @@ const projects = [
 		id: "p5",
 		url: "https://github.com/rubyruins/music-recs",
 		tags: ["pandas", "numpy", "jupyter", "tkinter"],
-		categories: "ml"
+		categories: "ml feature"
 	},
 	{
 		title: "daily journal", 

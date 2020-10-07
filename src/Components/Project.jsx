@@ -14,7 +14,7 @@ function Project(props) {
 	  		<div className="flip-card-back">
 			  	{props.tags.map(tag => <span className="tag">{tag}</span>)}
 				<br></br>
-				Link: <a href={props.url}><i className="fa fa-link"></i></a>
+				<span class="ml-1 mt-3">Link:</span> <a href={props.url}><i className="fa fa-link"></i></a>
 	  		</div>
 		</div>
   	</div>
