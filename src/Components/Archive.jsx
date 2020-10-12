@@ -7,8 +7,8 @@ function Archive() {
 	return (
 			<div className="content">
 				<div className="section" id="projects">
-					<h2 className="heading section-heading">What I <strong className="color-one-only">made</strong></h2>
-					<p className="main-content">Here's what I've been up to.</p>
+					<h2 className="heading section-heading">Everything <strong className="color-one-only">else</strong></h2>
+					<p className="main-content">A comprehensive list of all my work.</p>
 					<div className="button-group filters-button-group">
 						<button className="button is-checked" data-filter=".feature">Featured</button>
 						<button className="button" data-filter=".ml">Machine Learning</button>
@@ -16,7 +16,7 @@ function Archive() {
 						<button className="button" data-filter=".misc">Misc.</button>
 						<button className="button" data-filter="*">All</button>
 					</div>
-					<div className="isotopeGrid p-0 m-0">
+					<div className="isotopeGrid mt-3">
 						<div className="row">
 						{projects.map(project => (
 							<Project
@@ -30,6 +30,7 @@ function Archive() {
 							))}
 						</div>
 					</div>
+					<p className="main-content">Go back <a href="/">home.</a></p>
 				</div>
             </div>
 		);

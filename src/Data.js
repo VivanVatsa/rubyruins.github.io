@@ -72,6 +72,32 @@ const projects = [
 		categories: "fulldev"
 	}];
 
+const featured = [
+	{
+		title: "characterwise user sentiment", 
+		content: "Anaylse user sentiments from book comments.",
+		id: "f3",
+		url: "https://github.com/rubyruins/characterwise-user-sentiment",
+		tags: ["selenium", "pandas", "nlp", "matplotlib"],
+		categories: "ml misc feature"
+	},
+	{
+		title: "driver drowsiness detection", 
+		content: "A warning system to alert drowsy or tired drivers.",
+		id: "f2",
+		url: "https://github.com/rubyruins/driver-drowsiness-detection",
+		tags: ["opencv", "dlib", "tkinter", "face-recognition"],
+		categories: "ml"
+	},
+	{
+		title: "producthunt clone", 
+		content: "Allows users to create and vote for their favourite products.",
+		id: "f1",
+		url:"https://github.com/rubyruins/producthunt-clone",
+		tags: ["django", "mySQL", "bootstrap"],
+		categories: "fulldev"
+	}];
+
 const languages = [
 	{
 		title: "Python",
@@ -194,5 +220,5 @@ const certifications = [
 	}
 ]
 
-export {projects, languages, machineLearningSkills, webDevelopmentSkills, tools, internships, organizations, certifications};
+export {projects, featured, languages, machineLearningSkills, webDevelopmentSkills, tools, internships, organizations, certifications};
   

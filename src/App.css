@@ -5,13 +5,14 @@
 	--font-secondary: rgb(201, 201, 201);
 	--color-one: #9E2AD0;
 	--color-two: #1EC0A2;
-	--headings-font: 'Roboto Mono', monospace;
+	/* --headings-font: 'Roboto Mono', monospace; */
 	--paragraph-font: 'Poppins', sans-serif;
+	--heading-font: 'Poppins', sans-serif;
 }
 
 [data-theme="dark"] {
-	--background-primary: rgb(0, 0, 58);
-	--background-secondary:#00000e;
+	--background-primary: rgb(1, 1, 44);
+	--background-secondary:#000000;
 	--font-primary: white;
 	--font-secondary: rgb(92, 90, 105);
 	--color-one: #2977b8;

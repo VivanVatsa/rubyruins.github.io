@@ -3,18 +3,18 @@ import classnames from 'classnames';
 
 function Project(props) {
 	return (
-	<div className={classnames("col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 pl-0 element-item flip-card", props.categories)} data-category="post-transition">
-		<div className="flip-card-inner">
-	  		<div className="flip-card-front">
+	<div className={classnames("col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 pl-0 element-item", props.categories)} data-category="post-transition">
+		<div className="custom-card">
+	  		<div>
 			  	<h5 className="heading subsection-heading">
 			  		{props.title}
 				</h5>
 				<p className="main-content">{props.content}&nbsp;</p>
 	 		</div>
-	  		<div className="flip-card-back">
+	  		<div>
 			  	{props.tags.map(tag => <span className="tag">{tag}</span>)}
 				<br></br>
-				<span class="ml-1 mt-3">Link:</span> <a href={props.url}><i className="fa fa-link"></i></a>
+				<span class="ml-1 pt-5"><a href={props.url}><i className="fa fa-link"></i></a></span> 
 	  		</div>
 		</div>
   	</div>

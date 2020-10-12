@@ -1,9 +1,10 @@
 import React from 'react';
+import Project from './Project';
 import Skill from './Skill'
 import Internship from './Internship';
 import Organization from './Organization'
 import Certificate from './Certificate';
-import {languages, machineLearningSkills, webDevelopmentSkills, tools, internships, organizations, certifications} from '../Data';
+import {featured, languages, machineLearningSkills, webDevelopmentSkills, tools, internships, organizations, certifications} from '../Data';
 
 
 function Home() {
@@ -22,6 +23,22 @@ function Home() {
 						<span role="img" aria-label="star">🌟&nbsp;</span><strong>What I love: </strong>Hackathons, neural networks and web scraping. I'm currently expanding my knowledge of natural language processing and sequence models. Always exploring new ways to unite my love for coding + <span id="typed"></span>.
 					</p>
 					<br></br> 
+				</div>
+				<div className="section" id="featured">
+					<h2 className="heading section-heading">Featured <strong className="color-one-only">projects</strong></h2>
+					<p className="main-content">View all my work in the <a href="/archive">archive.</a></p>
+						<div className="row">
+						{featured.map(project => (
+							<Project
+								title={project.title}
+								content={project.content}
+								id={project.id}
+								url={project.url}
+								tags={project.tags}
+								categories={project.categories}
+							/>
+						))}
+					</div>
 				</div>
 				<div className="section" id="skills">
 					<h2 className="heading section-heading">What I <strong className="color-one-only">know</strong></h2>
@@ -111,7 +128,7 @@ function Home() {
 						</div>
 						<div className="col-lg-6 col-md-6">
 							<p className="main-content">
-								I'm actively looking for internships and opportunities in machine learning + web dev. Do feel free to get in touch! The fastest way to contact me is by email at <br></br> <a href="https://github.com/rubyruins" className="link color-one">soumya.parekh@somaiya.edu. </a> 
+								I'm actively looking for internships and opportunities in machine learning + web dev. Do feel free to get in touch! The fastest way to contact me is by email at <br></br> <a href="https://github.com/rubyruins" className="link color-one">soumyaparekh.me@gmail.com. </a> 
 								<br></br><br></br>
 								<i className="fab fa-github fa-2x mr-4"></i>
 								<i className="fab fa-linkedin fa-2x mr-4"></i>

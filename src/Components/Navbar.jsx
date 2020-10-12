@@ -7,19 +7,19 @@ function Navbar() {
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-					<a className="navbar-brand pl-4" href="#soumya"><span role="img" aria-label="home">home</span></a>
+					<a className="navbar-brand pl-4" href="#soumya"><span role="img" aria-label="home"><strong>Soumya Parekh</strong></span></a>
 					<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 						<li className="nav-item">
-							<a className="nav-link" href="#projects">01. Projects</a>
+							<a className="nav-link" href="#projects">Projects</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#skills">02. Skills</a>
+							<a className="nav-link" href="#skills">Skills</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#experience">03. Experience</a>
+							<a className="nav-link" href="#experience">Experience</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#about">04. About</a>
+							<a className="nav-link" href="#about">About</a>
 						</li>
 					</ul>
 				</div>
