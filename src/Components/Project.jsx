@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 function Project(props) {
 	return (
-	<div className={classnames("col-lg-4 col-md-6 pl-0 element-item flip-card ", props.categories)} data-category="post-transition">
+	<div className={classnames("col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 pl-0 element-item flip-card", props.categories)} data-category="post-transition">
 		<div className="flip-card-inner">
 	  		<div className="flip-card-front">
 			  	<h5 className="heading subsection-heading">

@@ -10,11 +10,9 @@ function Certificate(props) {
             </div>
             <div id={props.id} className="col-lg-12 collapse">
                 <div className="main-content">
-                    <p>
-                        <ul>
-                            {props.courses.map(course => <li>{course}</li>)}
-                        </ul>
-                    </p>
+                    <ul>
+                        {props.courses.map(course => <li key={props.id + props.courses.indexOf(course)}>{course}</li>)}
+                    </ul>
                 </div>
             </div>
         </div>

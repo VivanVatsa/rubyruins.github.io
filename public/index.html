@@ -9,11 +9,29 @@
 	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="favicon.ico" rel="favicon">
-	<link href="custom/css/main.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">		
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+	<link href="custom/css/main.css" rel="stylesheet">
 	<title>Soumya Parekh | Student Developer</title>
+	<script type="text/javascript">
+		(function(l) {
+			if (l.search) {
+				var q = {};
+				l.search.slice(1).split('&').forEach(function(v) {
+					var a = v.split('=');
+					q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+				});
+				if (q.p !== undefined) {
+					window.history.replaceState(null, null,
+					l.pathname.slice(0, -1) + (q.p || '') +
+					(q.q ? ('?' + q.q) : '') +
+					l.hash
+					);
+				}
+			}
+		}(window.location))
+	</script>
 </head>
 <body>
 	<noscript>You need to enable JavaScript to run this app.</noscript>
@@ -28,78 +46,87 @@
 			strings: ["music","art","words"],
 			typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")}
 			)});
-	</script>
-	<script>
-		$(document).ready(function(){
-			// Add minus icon for collapse element which is open by default
-			$(".collapse.show").each(function(){
-				$(this).prev(".collapse-heading").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-			});		
-			// Toggle plus minus icon on show hide of collapse element
-			$(".collapse").on('show.bs.collapse', function(){
-				$(this).prev(".collapse-heading").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-			}).on('hide.bs.collapse', function(){
-				$(this).prev(".collapse-heading").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+		</script>
+		<script>
+			$(document).ready(function(){
+				// Add minus icon for collapse element which is open by default
+				$(".collapse.show").each(function(){
+					$(this).prev(".collapse-heading").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+				});		
+				// Toggle plus minus icon on show hide of collapse element
+				$(".collapse").on('show.bs.collapse', function(){
+					$(this).prev(".collapse-heading").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+				}).on('hide.bs.collapse', function(){
+					$(this).prev(".collapse-heading").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+				});
 			});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			// Add minus icon for collapse element which is open by default
-			$(".toggler").click(function(){
-				$(this).find(".far").toggleClass("fa-sun").toggleClass("fa-moon");
-				$(document).find(".navbar").toggleClass("navbar-light").toggleClass("navbar-dark");
-				var theme = document.documentElement.getAttribute('data-theme');
-				console.log(theme);
-				if (theme) {
-					$(document).find(".waka").empty().append('<figure><embed src="https://wakatime.com/share/@73a28611-63aa-430b-ac34-67ff9da9d32f/f57f3bc7-3c85-4686-a637-7c39d74c3f3c.svg"></embed></figure>');
-					$(document).find(".github").empty().append('<img src="https://ghchart.rshah.org/9E2AD0/rubyruins" alt="Github"></img>')
-				} else {
-					$(document).find(".waka").empty().append('<figure><embed src="https://wakatime.com/share/@73a28611-63aa-430b-ac34-67ff9da9d32f/a0acf27e-6ddd-4129-8c6f-dbd1d1d3b6b1.svg"></embed></figure>');
-					$(document).find(".github").empty().append('<img src="https://ghchart.rshah.org/2977B8/rubyruins" alt="Github"></img>')
+		</script>
+		<script>
+			$(document).ready(function(){
+				// Add minus icon for collapse element which is open by default
+				$(".toggler").click(function(){
+					$(this).find(".far").toggleClass("fa-sun").toggleClass("fa-moon");
+					$(document).find(".navbar").toggleClass("navbar-light").toggleClass("navbar-dark");
+					var theme = document.documentElement.getAttribute('data-theme');
+					console.log(theme);
+					if (theme) {
+						$(document).find(".waka").empty().append('<figure><embed src="https://wakatime.com/share/@73a28611-63aa-430b-ac34-67ff9da9d32f/f57f3bc7-3c85-4686-a637-7c39d74c3f3c.svg"></embed></figure>');
+						$(document).find(".github").empty().append('<img src="https://ghchart.rshah.org/9E2AD0/rubyruins" alt="Github"></img>')
+					} else {
+						$(document).find(".waka").empty().append('<figure><embed src="https://wakatime.com/share/@73a28611-63aa-430b-ac34-67ff9da9d32f/a0acf27e-6ddd-4129-8c6f-dbd1d1d3b6b1.svg"></embed></figure>');
+						$(document).find(".github").empty().append('<img src="https://ghchart.rshah.org/2977B8/rubyruins" alt="Github"></img>')
+					}
+					if (!theme) {
+						document.documentElement.setAttribute("data-theme", "dark");
+					} else {
+						console.log("should be set to null");
+						document.documentElement.removeAttribute("data-theme");
+					}
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				// external js: isotope.pkgd.js
+				
+				// init Isotope
+				var iso = new Isotope( '.isotopeGrid', {
+					itemSelector: '.element-item',
+					layoutMode: 'fitRows'
+				});
+				
+				// filter functions
+				var filterFns = {};
+				
+				// bind filter button click
+				var filtersElem = document.querySelector('.filters-button-group');
+				filtersElem.addEventListener( 'click', function( event ) {
+					// only work with buttons
+					if ( !matchesSelector( event.target, 'button' ) ) {
+						return;
+					}
+					var filterValue = event.target.getAttribute('data-filter');
+					// use matching filter function
+					filterValue = filterFns[ filterValue ] || filterValue;
+					iso.arrange({ filter: filterValue });
+				});
+				
+				// change is-checked class on buttons
+				var buttonGroups = document.querySelectorAll('.button-group');
+				for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+					var buttonGroup = buttonGroups[i];
+					radioButtonGroup( buttonGroup );
 				}
-				if (!theme) {
-					document.documentElement.setAttribute("data-theme", "dark");
+			});
+		</script>
+		<script>
+			$(window).scroll(function() {
+				if ($(window).scrollTop() > 10) {
+					$('nav').addClass('floatingNav', 1000);
 				} else {
-					console.log("should be set to null");
-					document.documentElement.removeAttribute("data-theme");
+					$('nav').removeClass('floatingNav', 1000);
 				}
 			});
-		});
-	</script>
-	<script>
-		$(document).ready(function() {
-			// external js: isotope.pkgd.js
-
-			// init Isotope
-			var iso = new Isotope( '.isotopeGrid', {
-			itemSelector: '.element-item',
-			layoutMode: 'fitRows'
-			});
-
-			// filter functions
-			var filterFns = {};
-
-			// bind filter button click
-			var filtersElem = document.querySelector('.filters-button-group');
-			filtersElem.addEventListener( 'click', function( event ) {
-			// only work with buttons
-			if ( !matchesSelector( event.target, 'button' ) ) {
-				return;
-			}
-			var filterValue = event.target.getAttribute('data-filter');
-			// use matching filter function
-			filterValue = filterFns[ filterValue ] || filterValue;
-			iso.arrange({ filter: filterValue });
-			});
-
-			// change is-checked class on buttons
-			var buttonGroups = document.querySelectorAll('.button-group');
-			for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
-				var buttonGroup = buttonGroups[i];
-				radioButtonGroup( buttonGroup );
-			}
-	});
-	</script>
-</body>
-</html>
+		</script>
+	</body>
+	</html>
