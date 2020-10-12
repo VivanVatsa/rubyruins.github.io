@@ -1,21 +1,25 @@
 :root  {
 	--background-primary: white;
-	--background-secondary: rgb(230, 230, 230);
-	--font-primary: black;
-	--font-secondary: rgb(201, 201, 201);
+	--background-secondary:#F2F2F2;
+	--background-tertiary: rgb(201, 201, 201);
+	--font-primary: rgb(53, 53, 53);
+	--font-secondary: rgb(59, 59, 59);
 	--color-one: #9E2AD0;
-	--color-two: #1EC0A2;
+	--color-two: #9E2AD0;
+	/* --color-two: #1EC0A2; */
 	/* --headings-font: 'Roboto Mono', monospace; */
 	--paragraph-font: 'Poppins', sans-serif;
 	--heading-font: 'Poppins', sans-serif;
 }
 
 [data-theme="dark"] {
-	--background-primary: rgb(1, 1, 44);
+	--background-primary: rgb(19, 19, 43);
 	--background-secondary:#000000;
-	--font-primary: white;
-	--font-secondary: rgb(92, 90, 105);
-	--color-one: #2977b8;
-	--color-two: #1EC0A2;
+	--background-tertiary: #00134b;
+	--font-primary: #e1e8ff;
+	--font-secondary: #c5d4ff;
+	--color-one: #2382cf;
+	--color-two: #2382cf;
+	/* --color-two: #1EC0A2; */
 	/* --color-two: rgb(255, 166, 0); */
 }

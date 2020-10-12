@@ -33,6 +33,7 @@ function Home() {
 								title={project.title}
 								content={project.content}
 								id={project.id}
+								github={project.github}
 								url={project.url}
 								tags={project.tags}
 								categories={project.categories}

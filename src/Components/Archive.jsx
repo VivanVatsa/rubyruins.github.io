@@ -10,11 +10,10 @@ function Archive() {
 					<h2 className="heading section-heading">Everything <strong className="color-one-only">else</strong></h2>
 					<p className="main-content">A comprehensive list of all my work.</p>
 					<div className="button-group filters-button-group">
-						<button className="button is-checked" data-filter=".feature">Featured</button>
 						<button className="button" data-filter=".ml">Machine Learning</button>
 						<button className="button" data-filter=".fulldev">Full Stack</button>
 						<button className="button" data-filter=".misc">Misc.</button>
-						<button className="button" data-filter="*">All</button>
+						<button className="button is-checked" data-filter="*">All</button>
 					</div>
 					<div className="isotopeGrid mt-3">
 						<div className="row">
@@ -23,6 +22,7 @@ function Archive() {
 								title={project.title}
 								content={project.content}
 								id={project.id}
+								github={project.github}
 								url={project.url}
 								tags={project.tags}
 								categories={project.categories}

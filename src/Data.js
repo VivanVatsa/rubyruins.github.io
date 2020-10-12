@@ -3,23 +3,26 @@ const projects = [
 		title: "characterwise user sentiment", 
 		content: "Anaylse user sentiments from book comments.",
 		id: "p9",
-		url: "https://github.com/rubyruins/characterwise-user-sentiment",
+		github: "https://github.com/rubyruins/characterwise-user-sentiment",
+		url:"",
 		tags: ["selenium", "pandas", "nlp", "matplotlib"],
-		categories: "ml misc feature"
+		categories: "ml misc"
 	},
 	{
 		title: "driver drowsiness detection", 
 		content: "A warning system to alert drowsy or tired drivers.",
 		id: "p8",
-		url: "https://github.com/rubyruins/driver-drowsiness-detection",
-		tags: ["opencv", "dlib", "tkinter", "face-recognition"],
+		github: "https://github.com/rubyruins/driver-drowsiness-detection",
+		url:"",
+		tags: [ "opencv", "dlib", "tkinter"],
 		categories: "ml"
 	},
 	{
 		title: "producthunt clone", 
 		content: "Allows users to create and vote for their favourite products.",
 		id: "p7",
-		url:"https://github.com/rubyruins/producthunt-clone",
+		github:"https://github.com/rubyruins/producthunt-clone",
+		url:"",
 		tags: ["django", "mySQL", "bootstrap"],
 		categories: "fulldev"
 	},
@@ -27,23 +30,26 @@ const projects = [
 		title: "copinion", 
 		content: "A psychometric test to analyse common traits of engineering students.",
 		id: "p6",
-		url: "http://co-opinion.herokuapp.com/",
-		tags: ["php", "md-bootstrap", "pandas", "seaborn"],
-		categories: "fulldev feature"
+		github: "http://co-opinion.herokuapp.com/",
+		url:"http://co-opinion.herokuapp.com/",
+		tags: ["php", "python", "pandas", "seaborn"],
+		categories: "fulldev"
 	},
 	{
 		title: "music recs", 
 		content: "Recommending music through collaborative filtering.",
 		id: "p5",
-		url: "https://github.com/rubyruins/music-recs",
+		github: "https://github.com/rubyruins/music-recs",
+		url:"",
 		tags: ["pandas", "numpy", "jupyter", "tkinter"],
-		categories: "ml feature"
+		categories: "ml"
 	},
 	{
 		title: "daily journal", 
 		content: "A minimalistic journal to keep track of your day.",
 		id: "p4",
-		url: "https://github.com/rubyruins/daily-journal",
+		github: "https://github.com/rubyruins/daily-journal",
+		url:"",
 		tags: ["mongodb", "nodeJS", "expressjs"],
 		categories: "fulldev"
 	},
@@ -51,15 +57,17 @@ const projects = [
 		title: "secrets", 
 		content: "Authenticate yourself to anonymously post secrets.",
 		id: "p3",
-		url: "https://github.com/rubyruins/secrets",
-		tags: ["google-oauth", "passportJS", "nodeJSexpress"],
+		github: "https://github.com/rubyruins/secrets",
+		url:"",
+		tags: ["googleoauth", "passportJS", "nodeJS", "express"],
 		categories: "fulldev"
 	},
 	{
 		title: "criminal offense", 
 		content: "An interactive dashboard to visualise San Fransisco crimes.",
 		id: "p2",
-		url: "https://github.com/rubyruins/criminal-offense-2.0",
+		github: "https://github.com/rubyruins/criminal-offense-2.0",
+		url:"",
 		tags: ["chartsJS", "flask", "bootstrap", "pandas"],
 		categories: "ml misc"
 	},
@@ -67,7 +75,8 @@ const projects = [
 		title: "keeper", 
 		content: "A Google Keep clone to work with to-do lists.",
 		id: "p1",
-		url: "https://github.com/rubyruins/keeper",
+		github: "https://github.com/rubyruins/keeper",
+		url:"",
 		tags: ["reactJS", "material-ui"],
 		categories: "fulldev"
 	}];
@@ -77,23 +86,26 @@ const featured = [
 		title: "characterwise user sentiment", 
 		content: "Anaylse user sentiments from book comments.",
 		id: "f3",
-		url: "https://github.com/rubyruins/characterwise-user-sentiment",
+		github: "https://github.com/rubyruins/characterwise-user-sentiment",
+		url:"",
 		tags: ["selenium", "pandas", "nlp", "matplotlib"],
-		categories: "ml misc feature"
+		categories: "ml misc"
 	},
 	{
 		title: "driver drowsiness detection", 
 		content: "A warning system to alert drowsy or tired drivers.",
 		id: "f2",
-		url: "https://github.com/rubyruins/driver-drowsiness-detection",
-		tags: ["opencv", "dlib", "tkinter", "face-recognition"],
+		github: "https://github.com/rubyruins/driver-drowsiness-detection",
+		url:"",
+		tags: [ "opencv", "dlib", "tkinter"],
 		categories: "ml"
 	},
 	{
 		title: "producthunt clone", 
 		content: "Allows users to create and vote for their favourite products.",
 		id: "f1",
-		url:"https://github.com/rubyruins/producthunt-clone",
+		github:"https://github.com/rubyruins/producthunt-clone",
+		url:"",
 		tags: ["django", "mySQL", "bootstrap"],
 		categories: "fulldev"
 	}];
