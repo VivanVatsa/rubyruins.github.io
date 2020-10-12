@@ -1,16 +1,15 @@
 import React from 'react';
 import Project from './Project';
 import Skill from './Skill'
-import Internship from './Internship';
-import Organization from './Organization'
 import Certificate from './Certificate';
-import {featured, languages, machineLearningSkills, webDevelopmentSkills, tools, internships, organizations, certifications} from '../Data';
+import Experience from './Experience';
+import {featured, languages, machineLearningSkills, webDevelopmentSkills, tools, experience, certifications} from '../Data';
 
 
 function Home() {
 	return (
 			<div className="content">
-				<div className="section" id="soumya">
+				<div className="section pt-3" id="soumya">
 					<br></br>
 					<h1 className="heading top-heading">Hi, I'm Soumya.</h1>
 					<h4 className="heading subsection-heading">Also known as <strong className="color-one-only">@rubyruins</strong> on the internet.</h4>
@@ -24,7 +23,7 @@ function Home() {
 					</p>
 					<br></br> 
 				</div>
-				<div className="section" id="featured">
+				<div className="section pt-3" id="featured">
 					<h2 className="heading section-heading">Featured <strong className="color-one-only">projects</strong></h2>
 					<p className="main-content">View all my work in the <a href="/archive">archive.</a></p>
 						<div className="row">
@@ -41,7 +40,27 @@ function Home() {
 						))}
 					</div>
 				</div>
-				<div className="section" id="skills">
+				<div className="section pt-3" id="experience">
+					<h2 className="heading section-heading">Work <strong className="color-one-only">experience</strong></h2>
+					{/* <h5 className="heading subsection-heading link color-two-only">Internships</h5> */}
+					{experience.map(item => (
+						<Experience
+							title={item.title}
+							date={item.date}
+							content={item.content}
+							id={item.id}
+						/>
+					))}
+					{/* <h5 className="heading subsection-heading link color-two-only">Certifications</h5>
+					{certifications.map(certification => (
+						<Certificate
+							title={certification.title}
+							courses={certification.courses}
+							id={certification.id}
+						/>
+					))} */}
+				</div>
+				<div className="section pt-3" id="skills">
 					<h2 className="heading section-heading">What I <strong className="color-one-only">know</strong></h2>
 					<p className="main-content">Although, Socrates says that <em>the only true wisdom is in knowing you know nothing.</em><span role="img" aria-label="books">📚</span></p>
 					<div className="row">
@@ -83,34 +102,7 @@ function Home() {
 						</div>
 					</div>
 				</div>
-				<div className="section" id="experience">
-					<h2 className="heading section-heading">What I <strong className="color-one-only">did</strong></h2>
-					<h5 className="heading subsection-heading link color-two-only">Internships</h5>
-					{internships.map(internship => (
-						<Internship
-							title={internship.title}
-							content={internship.content}
-							id={internship.id}
-						/>
-					))}
-					<h5 className="heading subsection-heading link color-two-only">Organizations</h5>
-					{organizations.map(organization => (
-						<Organization
-							title={organization.title}
-							content={organization.content}
-							id={organization.id}
-						/>
-					))}
-					<h5 className="heading subsection-heading link color-two-only">Certifications</h5>
-					{certifications.map(certification => (
-						<Certificate
-							title={certification.title}
-							courses={certification.courses}
-							id={certification.id}
-						/>
-					))}
-				</div>
-				<div className="section" id="about">
+				<div className="section pt-3" id="about">
 					<h2 className="heading section-heading">Who I <strong className="color-one-only">am</strong></h2>
 					<p className="main-content">I'm a lover of numbers. Here are some stats for you.</p>
 					{/* <div className="row">

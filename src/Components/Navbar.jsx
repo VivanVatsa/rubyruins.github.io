@@ -10,13 +10,13 @@ function Navbar() {
 					<a className="navbar-brand pl-4" href="#soumya"><span role="img" aria-label="home"><strong>Soumya Parekh</strong></span></a>
 					<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 						<li className="nav-item">
-							<a className="nav-link" href="#projects">Projects</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#skills">Skills</a>
+							<a className="nav-link" href="#featured">Projects</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#experience">Experience</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="#skills">Skills</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#about">About</a>
