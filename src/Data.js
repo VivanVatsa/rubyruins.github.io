@@ -79,7 +79,8 @@ const projects = [
 		url:"",
 		tags: ["reactJS", "material-ui"],
 		categories: "fulldev"
-	}];
+	}
+];
 
 const featured = [
 	{
@@ -108,74 +109,62 @@ const featured = [
 		url:"",
 		tags: ["django", "mySQL", "bootstrap"],
 		categories: "fulldev"
-	}];
-
-const languages = [
-	{
-		title: "Python",
-		skill: "85%"
-	},
-	{
-		title: "Java",
-		skill: "75%"
-	},
-	{
-		title: "C",
-		skill: "70%"
-	},
-	{
-		title: "JavaScript",
-		skill: "70%"
-	},
-];
-
-const machineLearningSkills = [
-	{
-		title: "Machine Learning",
-		skill: "75%"
-	},
-	{
-		title: "Data Science",
-		skill: "75%"
-	},
-	{
-		title: "Deep Learning",
-		skill: "50%"
 	}
 ];
 
-const webDevelopmentSkills = [
-	{
-		title: "HTML + CSS",
-		skill: "90%"
-	},
-	{
-		title: "Django",
-		skill: "75%"
-	},
-	{
-		title: "NodeJS + Express",
-		skill: "70%"
-	},
-	{
-		title: "MongoDB",
-		skill: "60%"
-	},
-	{
-		title: "ReactJS",
-		skill: "50%"
-	}
-];
-
-const tools = [
-	{
-		title: "Git + GitHub",
-		skill: "70%"
-	},
-	{
-		title: "Adobe Photoshop",
-		skill: "70%"
-	}
+const skills = [
+	[
+		{
+			title: "Python",
+			proficiency: "85%"
+		},
+		{
+			title: "Java",
+			proficiency: "75%"
+		},
+		{
+			title: "C++",
+			proficiency: "70%"
+		}
+	],
+	[
+		{
+			title: "Machine Learning Algorithms",
+			proficiency: "75%"
+		},
+		{
+			title: "Deep Learning Algorithms",
+			proficiency: "70%"
+		},
+		{
+			title: "Natural Language Processing",
+			proficiency: "60%"
+		}
+	],
+	[
+		{
+			title: "Django",
+			proficiency: "75%"
+		},
+		{
+			title: "NodeJS + Express",
+			proficiency: "70%"
+		},
+		{
+			title: "ReactJS",
+			proficiency: "50%"
+		}
+	],
+	[
+		{
+			title: "Git + GitHub",
+			proficiency: "70%"
+		},
+		{
+			title: "Adobe Photoshop",
+			proficiency: "70%"
+		}
+	]
 ];
 
 const experience = [
@@ -230,10 +219,9 @@ const certifications = [
 	},
 	{
 		title: "Deep Learning Specialisation | Deeplearning.ai, Coursera",
-		courses: ["Neural Networks and Deep Learning", "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization", "Structuring Machine Learning Projects", "Convolutional Neural Networks Sequence Models"],
+		courses: ["Neural Networks and Deep Learning", "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization", "Structuring Machine Learning Projects", "Convolutional Neural Networks", "Sequence Models"],
 		id: "c1"
 	}
 ]
 
-export {projects, featured, languages, machineLearningSkills, webDevelopmentSkills, tools, experience, certifications};
-  
+export {projects, featured, skills, experience, certifications};

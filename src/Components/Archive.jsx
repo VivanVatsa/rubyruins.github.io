@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 import Project from './Project';
 import {projects} from '../Data';
 
@@ -17,20 +18,21 @@ function Archive() {
 					</div>
 					<div className="isotopeGrid mt-3">
 						<div className="row">
-						{projects.map(project => (
-							<Project
-								title={project.title}
-								content={project.content}
-								id={project.id}
-								github={project.github}
-								url={project.url}
-								tags={project.tags}
-								categories={project.categories}
-							/>
+							{projects.map(project => (
+								<div className={classnames("col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 pl-0 element-item", project.categories)} data-category="post-transition">
+									<Project
+										title={project.title}
+										content={project.content}
+										id={project.id}
+										github={project.github}
+										url={project.url}
+										tags={project.tags}
+										categories={project.categories}
+									/>
+								</div>
 							))}
 						</div>
 					</div>
-					<p className="main-content">Go back <a href="/">home.</a></p>
 				</div>
             </div>
 		);

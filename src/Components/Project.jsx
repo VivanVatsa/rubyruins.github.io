@@ -1,9 +1,7 @@
 import React from 'react';
-import classnames from 'classnames';
 
 function Project(props) {
 	return (
-	<div className={classnames("col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 pl-0 element-item", props.categories)} data-category="post-transition">
 		<div className="custom-card">
 	  		<div>
 			  	<h5 className="heading subsection-heading" style={{textTransform:"capitalize"}}>
@@ -17,8 +15,7 @@ function Project(props) {
 			  	{props.tags.map(tag => <span className="custom-tag">{tag}</span>)}				
 	  		</div>
 		</div>
-  	</div>
-  );
+    );
 }
 	
 export default Project;
