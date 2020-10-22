@@ -7,6 +7,7 @@ import {projects} from '../Data';
 function Archive() {
 	return (
 			<div className="content">
+			<div className="section py-5" id="loader" style={{'backgroundColor': 'red'}}>I AM LOADING</div>
 				<div className="section" id="projects">
 					<h2 className="heading section-heading">Everything <strong className="color-one-only">else</strong></h2>
 					<p className="main-content">A comprehensive list of all my work.</p>

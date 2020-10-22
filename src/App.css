@@ -17,14 +17,14 @@
 	--background-primary: rgb(255, 255, 255);
 	--background-secondary: rgb(201, 201, 201);
 	--background-tertiary:#F2F2F2;
-	--font-primary:rgb(19, 19, 19);
-	--font-secondary: rgb(85, 85, 85);
+	--font-primary:#131313;
+	--font-secondary: #555555;
 	--color-one: #9E2AD0;
 	/* --color-two: #1EC0A2; */
 }
 
 [data-theme = "dark"] {
-	--background-primary: rgb(19, 19, 54);
+	--background-primary: #131336;
 	--background-secondary:#000000;
 	--background-tertiary: #000925;
 	/* --background-tertiary: #00134B; */

@@ -9,6 +9,7 @@ import {featured, skills, experience, certifications} from '../Data';
 function Home() {
 	return (
 			<div className="content">
+				<div className="section py-5" id="loader" style={{'backgroundColor': 'red'}}>I AM LOADING</div>
 				<div className="section py-5" id="soumya">
 					<br></br>
 					<h1 className="heading top-heading">Hi, I'm Soumya.</h1>
@@ -110,11 +111,21 @@ function Home() {
 				<div className="section py-5" id="about">
 					<h2 className="heading section-heading">Who I <strong className="color-one-only">am</strong></h2>
 					<p className="main-content">I'm a lover of numbers. Here are some stats for you.</p>
-					{/* <div className="row">
-						<div className="col-lg-12 pl-0 py-5">
+					<div className="row">
+					<div className="col-lg-6" id="chart-1">			
+							{/* <p class="main-content">Coding activity this week</p> */}
+							<canvas id="activityChart"></canvas>
+						</div>
+						<div className="col-lg-6" id="chart-2">			
+							{/* <p class="main-content">Languages used this month</p> */}
+							<canvas id="languagesChart"></canvas>
+						</div>
+					</div>
+					<div className="row">
+						<div className="col-lg-12 py-5">
 							<img src="https://ghchart.rshah.org/9E2AD0/rubyruins" className="github" alt="Github"></img>
 						</div>
-					</div> */}
+					</div>
 					<div className="row">
 						<div className="col-lg-6 col-md-6">			
 							<p className="main-content">In my free time, I love to read Greek mythology and listen to rock music. I'm a featured writer on <a href="https://github.com/rubyruins" className="link color-one">Wattpad</a>, where I write high fantasy novels for fun. You can find my work <a href="https://github.com/rubyruins" className="link color-one">@rubyruins.</a></p>
