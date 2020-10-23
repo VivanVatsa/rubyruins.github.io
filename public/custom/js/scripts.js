@@ -8,10 +8,6 @@ myLanguages = {};
 
 // chart 1
 function makeActivityChart() {
-	console.log(myActivity["activityLabels"]);
-	console.log(myActivity.activityData);
-	console.log(myActivity);
-	console.log("hi bb");
 	var activityChart = new Chart(document.getElementById('activityChart'), {
 		type: 'line',
 		data: {
@@ -44,8 +40,16 @@ function makeActivityChart() {
 			scales: {
 				xAxes: [{
 					type: 'time',
+					time: {
+						unit: 'day',
+					},
 					displayFormats: {
 						day: 'MMM D'
+					},
+					ticks: {
+						callback: function(value, index, values) {
+							return String(new Date(value)).charAt(0);
+						}
 					},
 					display: true,
 					scaleLabel: {
@@ -62,7 +66,7 @@ function makeActivityChart() {
 					},
 					display: true,
 					scaleLabel: {
-						display: true,
+						display: false,
 						labelString: "Hours per day",
 					},
 					gridLines: {
@@ -77,37 +81,51 @@ function makeActivityChart() {
 // chart 2
 function makeLanguagesChart() {
 	var languagesChart = new Chart(document.getElementById('languagesChart'), {
-		type: 'bar',
+		type: 'horizontalBar',
 		data: {
-			labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+			labels: myLanguages.languageLabels,
 			datasets: [{
-				label: '# of Votes',
-				data: [12, 19, 3, 5, 2, 3],
-				backgroundColor: [
-					'rgba(255, 99, 132, 0.2)',
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(255, 206, 86, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)',
-					'rgba(255, 159, 64, 0.2)'
-				],
-				borderColor: [
-					'rgba(255, 99, 132, 1)',
-					'rgba(54, 162, 235, 1)',
-					'rgba(255, 206, 86, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)',
-					'rgba(255, 159, 64, 1)'
-				],
+				label: 'Language',
+				data: myLanguages.languageData,
+				backgroundColor: getComputedStyle(document.body).getPropertyValue('--color-one'),
+				borderColor: getComputedStyle(document.body).getPropertyValue('--color-one'),
 				borderWidth: 1
 			}]
 		},
 		options: {
+			legend: {
+				display: true
+			},
+			hover: {
+				mode: 'point',
+				intersect: true
+			},
 			scales: {
 				yAxes: [{
 					ticks: {
 						beginAtZero: true
-					}
+					},
+					scaleLabel: {
+						display: false,
+						labelString: "Language",
+					},
+					gridLines: {
+						display:false
+					},
+				}],
+				xAxes: [{
+					ticks: {
+						callback: function(value, index, values) {
+							return value + '%';
+						}
+					},
+					scaleLabel: {
+						display: true,
+						labelString: "Usage",
+					},
+					gridLines: {
+						display:false
+					},
 				}]
 			},
 			title: {
@@ -115,9 +133,6 @@ function makeLanguagesChart() {
 				text: 'Languages used this month',
 				fontStyle: 'normal'
 			},
-			legend: {
-				display: false,
-			}
 		}
 	});
 }
@@ -125,8 +140,9 @@ function makeLanguagesChart() {
 document.onreadystatechange = function() { 
 	if (document.readyState !== "complete") { 
 		document.querySelector("body").style.visibility = "hidden"; 
-		document.querySelector("#loader").style.visibility = "visible"; 
+		document.querySelector(".page-loader").style.visibility = "visible"; 
 		if (window.location.pathname === '/') {
+			Chart.defaults.global.defaultBorderColor = getComputedStyle(document.body).getPropertyValue('--color-one').trim();
 			// get activity stats
 			$.ajax({
 				type: 'GET',
@@ -172,7 +188,7 @@ document.onreadystatechange = function() {
 			});
 		}
 	} else { 
-		document.querySelector("#loader").style.display = "none"; 
+		document.querySelector(".page-loader").style.display = "none"; 
 		document.querySelector("body").style.visibility = "visible"; 
 	} 
 }; 
@@ -238,7 +254,7 @@ $(document).ready(function(){
 			$(document).find(".github").attr("src", "https://ghchart.rshah.org/" + String(getComputedStyle(document.body).getPropertyValue('--color-one').replace("#", "").trim()) + "/rubyruins");
 			Chart.defaults.global.defaultFontColor = getComputedStyle(document.body).getPropertyValue('--font-secondary').trim();
 			Chart.defaults.global.defaultFontStyle = 'normal';
-			Chart.defaults.global.defaultBorderColor = getComputedStyle(document.body).getPropertyValue('--color-one');
+			Chart.defaults.global.defaultBorderColor = getComputedStyle(document.body).getPropertyValue('--color-one').trim();
 			// makeActivityChart();
 			// makeLanguagesChart();
 		}
