@@ -13,7 +13,7 @@
 	--headings-font: 'Poppins', sans-serif;
 }
 
-[data-theme = "light"] {
+[data-theme = "morning"] {
 	--background-primary: rgb(255, 255, 255);
 	--background-secondary: rgb(201, 201, 201);
 	--background-tertiary:#F2F2F2;
@@ -23,7 +23,7 @@
 	/* --color-two: #1EC0A2; */
 }
 
-[data-theme = "dark"] {
+[data-theme = "night"] {
 	--background-primary: #131336;
 	--background-secondary:#000000;
 	--background-tertiary: #000925;
