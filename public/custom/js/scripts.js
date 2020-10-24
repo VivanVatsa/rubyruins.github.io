@@ -15,16 +15,15 @@ function makeActivityChart() {
 			datasets: [{
 				label: 'Hours spent',
 				data: myActivity.activityData,
-				backgroundColor: [
-					'transparent'
-				],
-				borderColor: [
-					getComputedStyle(document.body).getPropertyValue('--color-one')
-				],
+				backgroundColor: 'transparent',
+				borderColor: getComputedStyle(document.body).getPropertyValue('--color-one'),
 				borderWidth: 2.5
 			}]
 		},
 		options: {
+			tooltips: {
+				displayColors: false
+			},
 			hover: {
 				mode: 'point',
 				intersect: true
@@ -37,19 +36,14 @@ function makeActivityChart() {
 			legend: {
 				display: false,
 			},
+			scaleShowValues: true,
 			scales: {
 				xAxes: [{
-					type: 'time',
-					time: {
-						unit: 'day',
-					},
-					displayFormats: {
-						day: 'MMM D'
-					},
+					bounds: 'ticks',
 					ticks: {
-						callback: function(value, index, values) {
-							return String(new Date(value)).charAt(0);
-						}
+						autoSkip: false,
+						min: 7,
+						max: 7
 					},
 					display: true,
 					scaleLabel: {
@@ -63,6 +57,7 @@ function makeActivityChart() {
 				yAxes: [{
 					ticks: {
 						beginAtZero: true,
+						autoSkip: false,
 					},
 					display: true,
 					scaleLabel: {
@@ -89,12 +84,17 @@ function makeLanguagesChart() {
 				data: myLanguages.languageData,
 				backgroundColor: getComputedStyle(document.body).getPropertyValue('--color-one'),
 				borderColor: getComputedStyle(document.body).getPropertyValue('--color-one'),
-				borderWidth: 1
+				borderWidth: 1,
+				hoverBackgroundColor: getComputedStyle(document.body).getPropertyValue('--color-one').trim(),
+				hoverBorderColor: getComputedStyle(document.body).getPropertyValue('--color-one').trim()
 			}]
 		},
 		options: {
+			tooltips: {
+				displayColors: false
+			},
 			legend: {
-				display: true
+				display: false
 			},
 			hover: {
 				mode: 'point',
@@ -182,6 +182,7 @@ document.onreadystatechange = function() {
 							var d = (new Date(response.data[i].range.date).toLocaleString().split(' ')[0]).replace(",", "");
 							d = d.split("/");
 							d = String(d[2]) + "-" + String(d[0]) + "-" + String(d[1]);
+							d = String(new Date(d)).charAt(0) + String(new Date(d)).charAt(1) + String(new Date(d)).charAt(2)
 							activityLabels.push(d);
 						}
 						myActivity.activityLabels = activityLabels;
@@ -200,7 +201,13 @@ document.onreadystatechange = function() {
 						console.log("l success");
 						var languageLabels = [];
 						var languageData = [];
-						for (var i = 0; i < response.data.length; i ++) {
+						var l;
+						if (response.data.length > 5) {
+							l = 5
+						} else {
+							l = response.data.length;
+						}
+						for (var i = 0; i < l; i ++) {
 							languageLabels.push(response.data[i].name); 
 							languageData.push(response.data[i].percent);
 						}
@@ -266,6 +273,7 @@ $(document).ready(function(){
 			Chart.defaults.global.defaultFontColor = getComputedStyle(document.body).getPropertyValue('--font-secondary').trim();
 			Chart.defaults.global.defaultFontStyle = 'normal';
 			Chart.defaults.global.defaultBorderColor = getComputedStyle(document.body).getPropertyValue('--color-one').trim();
+			Chart.defaults.global.defaultFontSize = 10;
 		}
 		
 		$(".toggler").click(function(){
