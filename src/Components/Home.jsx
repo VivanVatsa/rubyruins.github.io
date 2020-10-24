@@ -3,7 +3,8 @@ import Project from './Project';
 import Skill from './Skill'
 import Certificate from './Certificate';
 import Experience from './Experience';
-import {featured, skills, experience, certifications} from '../Data';
+import Organization from './Organization';
+import {featured, skills, experience, organizations, certifications} from '../Data';
 
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
 						<div class="line line3"></div>
 					</div>
 					<div class="text">
-						<p class="main-content">Compiling...</p>
+						<p class="heading subsection-heading">COMPILING...</p>
 					</div>
 				</div>
 			</div>
@@ -120,6 +121,18 @@ function Home() {
 						/>
 					))}
 				</div>
+				<div className="section py-5" id="organizations">
+					<h2 className="heading section-heading">Other <strong className="color-one-only">organizations</strong></h2>
+					{/* <h5 className="heading subsection-heading link color-two-only">Internships</h5> */}
+					{organizations.map(item => (
+						<Organization
+							title={item.title}
+							date={item.date}
+							content={item.content}
+							id={item.id}
+						/>
+					))}
+				</div>			
 				<div className="section py-5" id="about">
 					<h2 className="heading section-heading">Who I <strong className="color-one-only">am</strong></h2>
 					<p className="main-content">I'm a lover of numbers. Here are some stats for you.</p>

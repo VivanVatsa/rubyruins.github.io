@@ -16,7 +16,7 @@ function Archive() {
 						<div class="line line3"></div>
 					</div>
 					<div class="text">
-						<p class="main-content">Compiling...</p>
+					<p class="heading subsection-heading">COMPILING...</p>
 					</div>
 				</div>
 			</div>
