@@ -161,6 +161,7 @@ document.onreadystatechange = function() {
 	} else if ((storedTheme === "light") || (!storedTheme)) {
 		applyLight();
 	}
+	console.log(storedTheme)
 	if ((window.location.pathname === '/') || (window.location.pathname === '/archive')) {
 		if ((document.readyState !== "complete")) { 
 			document.querySelector("body").style.visibility = "hidden"; 
