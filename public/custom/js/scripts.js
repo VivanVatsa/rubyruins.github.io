@@ -154,15 +154,15 @@ function applyDark() {
 }
 
 document.onreadystatechange = function() { 
+	// load previously saved theme if any
+	var storedTheme = localStorage.getItem("data-theme");
+	if(storedTheme === "dark"){
+		applyDark();
+	} else if ((storedTheme === "light") || (!storedTheme)) {
+		applyLight();
+	}
 	if ((window.location.pathname === '/') || (window.location.pathname === '/archive')) {
 		if ((document.readyState !== "complete")) { 
-			// load previously saved theme if any
-			var storedTheme = localStorage.getItem("data-theme");
-			if(storedTheme === "dark"){
-				applyDark();
-			} else if ((storedTheme === "light") || (!storedTheme)) {
-				applyLight();
-			}
 			document.querySelector("body").style.visibility = "hidden"; 
 			document.querySelector(".page-loader").style.visibility = "visible"; 
 			if (window.location.pathname === '/') {
@@ -220,6 +220,14 @@ document.onreadystatechange = function() {
 
 $(document).ready(function(){
 	
+	// smooth scroll navbar
+	$('.nav-item a').click(function(e) {
+		var targetHref = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(targetHref).offset().top
+		}, 500);
+		e.preventDefault();
+	});
 	
 	// typing effect
 	function newTyped(){}$(function(){
@@ -288,7 +296,7 @@ $(document).ready(function(){
 			activityChart.update();
 			languagesChart.update();
 		});
-	
+		
 		
 		// initialise isotope
 		var iso = new Isotope( '.isotopeGrid', {
@@ -296,7 +304,7 @@ $(document).ready(function(){
 			layoutMode: 'fitRows'
 		});
 		
-
+		
 		// filter functions
 		var filterFns = {};
 		
@@ -324,7 +332,7 @@ $(document).ready(function(){
 					}
 				}
 			});
-			}
+		}
 	});
 	
 	
