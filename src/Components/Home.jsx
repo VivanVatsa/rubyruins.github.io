@@ -137,17 +137,8 @@ function Home() {
 					<h2 className="heading section-heading">Who I <strong className="color-one-only">am</strong></h2>
 					<p className="main-content">I'm a lover of numbers. Here are some stats for you.</p>
 					<div className="row">
-						<div className="col-lg-6 px-0" id="chart-1">			
-							<canvas id="activityChart"></canvas>
-						</div>
-						<div className="col-lg-6 px-0" id="chart-2">			
+						<div className="col-xl-6 col-lg-6 col-md-6 px-0" id="chart-2">			
 							<canvas id="languagesChart"></canvas>
-						</div>
-					</div>
-					<div className="row">
-						<div className="col-lg-12 py-5 github-block">
-							<img src="https://ghchart.rshah.org/9E2AD0/rubyruins" className="github" alt="Github"></img>
-							<p class="main-content mt-2 ml-3" style={{'color': '#aaa'}}>Github contributions this year.</p>
 						</div>
 					</div>
 					<div className="row">
