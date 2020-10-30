@@ -498,9 +498,9 @@ a, a:hover {
 	text-decoration: none;
 }
 
-/* .link:hover {
-	color: #fff;
-} */
+.link:hover {
+	color: var(--background-primary) !important;
+}
 
 .filter-buttons {
 	background-color: var(--background-primary);
@@ -561,7 +561,7 @@ a, a:hover {
 	color: var(--color-one);
 }
 
-.fas {
+.fas, .far {
 	cursor: pointer;
 }
 

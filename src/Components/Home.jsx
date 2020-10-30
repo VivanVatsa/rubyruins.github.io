@@ -36,13 +36,13 @@ function Home() {
 						<span role="img" aria-label="laptop">🎯&nbsp;</span><strong className="heading subsection-heading">What I do: </strong>Python, neural networks and web scraping. I'm deeply interested natural language processing and am currently expanding my knowledge of sequence models. 
 						<br></br><br className="hide-space"></br>
 						<span role="img" aria-label="star">🌟&nbsp;</span><strong className="heading subsection-heading">What I love: </strong>Finding new, innovative solutions to everyday problems with a passion for learning new tech stacks. 
-						Always exploring new ways to unite my love for coding + <span id="typed"></span>.
+						Always exploring new ways to unite my love for coding + <span id="typed"></span>
 					</p>
 					<br></br> 
 				</div>
 				<div className="section py-5" id="featured">
 					<h2 className="heading section-heading">Featured <strong className="color-one-only">projects</strong></h2>
-					<p className="main-content">View all my work in the <a href="/archive">archive.</a></p>
+					<p className="main-content">View all my work in the <a href="/archive" className="link color-one">archive.</a></p>
 						<div className="row">
 						{featured.map(project => (
 							<div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 pl-0">

@@ -34,7 +34,7 @@ function Navbar() {
 					<a className="navbar-brand pl-4" href="/"><span role="img" aria-label="home"><strong>Soumya Parekh</strong></span></a>
 					{showLinks(page)}
 				</div>
-				<li className="navbar-brand ml-auto toggler"><i className="fas fa-sun fa-3x"></i></li>
+				<li className="navbar-brand ml-auto toggler"><i className="far fa-sun fa-3x"></i></li>
 			</nav>
 	);
 }
