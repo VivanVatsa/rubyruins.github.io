@@ -1,8 +1,8 @@
 :root  {
 	--headings-font: 'Poppins', sans-serif;
-	--paragraph-font: 'Roboto Mono', monospace;
+	/* --paragraph-font: 'Roboto Mono', monospace; */
 	/* --paragraph-font: 'Fira Code', monospace; */
-	/* --paragraph-font: 'Roboto', sans-serif; */
+	--paragraph-font: 'Roboto', sans-serif;
 }
 
 [data-theme = "day"] {
