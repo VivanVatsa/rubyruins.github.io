@@ -58,6 +58,9 @@ function Home() {
 							title={item.title}
 							date={item.date}
 							content={item.content}
+							tech={item.tech}
+							url={item.url}
+							github={item.github}
 							id={item.id}
 						/>
 					))}
@@ -120,6 +123,7 @@ function Home() {
 							title={item.title}
 							date={item.date}
 							content={item.content}
+							url={item.url}
 							id={item.id}
 						/>
 					))}
