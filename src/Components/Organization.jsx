@@ -3,7 +3,7 @@ import React from 'react';
 function showUrl(l) {
 	if (l) {
 		return (
-			<span><a href={l}><i className="fas fa-external-link-alt"></i></a></span>
+			<span><a href={l} target="_blank" rel="noreferrer"><i className="fas fa-external-link-alt"></i></a></span>
 		)
 	}
 }

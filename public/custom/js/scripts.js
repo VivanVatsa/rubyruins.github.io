@@ -188,15 +188,15 @@ $(document).ready(function(){
 		
 		// Toggle icon for collapse element which is open by default
 		$(".collapse.show").each(function(){
-			$(this).prev(".collapse-heading").find(".far").addClass("fa-angle-up").removeClass("fa-angle-down");
+			$(this).prev(".collapse-heading").find(".fas").addClass("fa-angle-up").removeClass("fa-angle-down");
 		});		
 		
 		
 		// Toggle plus minus icon on show hide of collapse element
 		$(".collapse").on('show.bs.collapse', function(){
-			$(this).prev(".collapse-heading").find(".far").removeClass("fa-angle-down").addClass("fa-angle-up");
+			$(this).prev(".collapse-heading").find(".fas").removeClass("fa-angle-down").addClass("fa-angle-up");
 		}).on('hide.bs.collapse', function(){
-			$(this).prev(".collapse-heading").find(".far").removeClass("fa-angle-up").addClass("fa-angle-down");
+			$(this).prev(".collapse-heading").find(".fas").removeClass("fa-angle-up").addClass("fa-angle-down");
 		});
 		
 		// initial theme settings before toggle

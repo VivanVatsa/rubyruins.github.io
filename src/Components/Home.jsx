@@ -20,13 +20,13 @@ function Home() {
 					<h4 className="heading subsection-heading">Also known as <strong className="color-one-only">@rubyruins</strong> on the internet.</h4>
 					<br></br>
 					<p className="main-content">
-						<span role="img" aria-label="laptop">💻&nbsp;</span><strong className="heading subsection-heading">Who I am: </strong>ML practitioner + passionate software developer + third year CS undergrad.
+						<span role="img" aria-label="laptop">💻&nbsp;</span><strong className="heading subsection-heading">Who I am. </strong>ML practitioner + passionate software developer + third year CS undergrad.
 						<br></br><br className="hide-space"></br>
-						<span role="img" aria-label="contact">💬&nbsp;</span><strong className="heading subsection-heading">Where I am: </strong>You can find me on <a href="https://github.com/rubyruins" className="link color-one">GitHub</a> and <a href="https://github.com/rubyruins" className="link color-one">LinkedIn.</a>Shoot me a quick <a href="https://github.com/rubyruins" className="link color-one">email</a> or download my resume <a href="https://github.com/rubyruins" className="link color-one">here.</a>
+						<span role="img" aria-label="contact">💬&nbsp;</span><strong className="heading subsection-heading">Where I am. </strong>You can find me on <a href="https://github.com/rubyruins" className="link color-one" target="_blank" rel="noreferrer">GitHub</a> and <a href="https://www.linkedin.com/in/soumya-parekh/" className="link color-one" target="_blank" rel="noreferrer">LinkedIn.</a> Shoot me a quick <a href="mailto:soumyaparekh.me@gmail.com" className="link color-one" target="_blank" rel="noreferrer">email</a> or check out my resume <a href="https://drive.google.com/file/d/1g_aiKJ7qXKgrZXtPVI6ggUk5mkvbw4A4/view?usp=sharing" className="link color-one" target="_blank" rel="noreferrer">here.</a>
 						<br></br><br className="hide-space"></br>
-						<span role="img" aria-label="laptop">🎯&nbsp;</span><strong className="heading subsection-heading">What I do: </strong>Python, neural networks and web scraping. I'm deeply interested natural language processing and am currently expanding my knowledge of sequence models. 
+						<span role="img" aria-label="laptop">🎯&nbsp;</span><strong className="heading subsection-heading">What I do. </strong>Python, neural networks and web scraping. I'm deeply interested in natural language processing and am currently expanding my knowledge of sequence models. 
 						<br></br><br className="hide-space"></br>
-						<span role="img" aria-label="star">🌟&nbsp;</span><strong className="heading subsection-heading">What I love: </strong>Finding new, innovative solutions to everyday problems with a passion for learning new tech stacks. 
+						<span role="img" aria-label="star">🌟&nbsp;</span><strong className="heading subsection-heading">What I love. </strong>Finding new, innovative solutions to everyday problems with a passion for learning new tech stacks. 
 						Always exploring new ways to unite my love for coding + <span id="typed"></span>
 					</p>
 					<br></br> 
@@ -51,7 +51,7 @@ function Home() {
 					</div>
 				</div>
 				<div className="section py-5" id="experience">
-					<h2 className="heading section-heading">Work <strong className="color-one-only">experience</strong></h2>
+					<h2 className="heading section-heading">Professional <strong className="color-one-only">experience</strong></h2>
 					{/* <h5 className="heading subsection-heading link color-two-only">Internships</h5> */}
 					{experience.map(item => (
 						<Experience
@@ -67,10 +67,10 @@ function Home() {
 				</div>
 				<div className="section py-5" id="skills">
 					<h2 className="heading section-heading">What I <strong className="color-one-only">know</strong></h2>
-					<p className="main-content">Although, Socrates says that <em>the only true wisdom is in knowing you know nothing.</em><span role="img" aria-label="books">📚</span></p>
+					<p className="main-content">Although, Socrates says that the only true wisdom is in knowing you know nothing.</p>
 					<div className="row">
 						<div className="col-lg-3 col-md-6">
-							<h5 className="heading subsection-heading link color-two-only">Languages</h5>
+							<h5 className="heading subsection-heading">Languages</h5>
 							{skills[0].map(skill => (
 							<Skill
 								title={skill.title}
@@ -79,7 +79,7 @@ function Home() {
 							))}
 						</div>
 						<div className="col-lg-3 col-md-6">
-							<h5 className="heading subsection-heading link color-two-only">ML / DL</h5>
+							<h5 className="heading subsection-heading">ML / DL</h5>
 							{skills[1].map(skill => (
 							<Skill
 								title={skill.title}
@@ -88,7 +88,7 @@ function Home() {
 							))}
 						</div>
 						<div className="col-lg-3 col-md-6">
-							<h5 className="heading subsection-heading link color-two-only">Frameworks</h5>
+							<h5 className="heading subsection-heading">Frameworks</h5>
 							{skills[2].map(skill => (
 							<Skill
 								title={skill.title}
@@ -97,7 +97,7 @@ function Home() {
 							))}
 						</div>
 						<div className="col-lg-3 col-md-6">
-							<h5 className="heading subsection-heading link color-two-only">Tools</h5>
+							<h5 className="heading subsection-heading">Tools</h5>
 							{skills[3].map(skill => (
 							<Skill
 								title={skill.title}
@@ -106,7 +106,7 @@ function Home() {
 							))}
 						</div>
 					</div>
-					<h5 className="heading subsection-heading link color-two-only">Certifications</h5>
+					<h5 className="heading subsection-heading">Certifications</h5>
 					{certifications.map(certification => (
 						<Certificate
 							title={certification.title}
@@ -116,7 +116,7 @@ function Home() {
 					))}
 				</div>
 				<div className="section py-5" id="organizations">
-					<h2 className="heading section-heading">Other <strong className="color-one-only">organizations</strong></h2>
+					<h2 className="heading section-heading">Other <strong className="color-one-only">activities</strong></h2>
 					{/* <h5 className="heading subsection-heading link color-two-only">Internships</h5> */}
 					{organizations.map(item => (
 						<Organization
@@ -130,19 +130,18 @@ function Home() {
 				</div>			
 				<div className="section py-5" id="about">
 					<h2 className="heading section-heading">Who I <strong className="color-one-only">am</strong></h2>
-					<p className="main-content">I'm a lover of numbers. Here are some stats for you.</p>
 					<div className="row">
-						<div className="col-xl-6 col-lg-6 col-md-6 px-0" id="chart-2">			
+						<div className="col-xl-6 col-lg-6 col-md-10 px-0" id="chart-2">			
 							<canvas id="languagesChart"></canvas>
 						</div>
 					</div>
 					<div className="row">
 						<div className="col-lg-6 col-md-6">			
-							<p className="main-content">In my free time, I love to read Greek mythology and listen to rock music. I'm a featured writer on <a href="https://github.com/rubyruins" className="link color-one">Wattpad</a>, where I write high fantasy novels for fun. You can find my work <a href="https://github.com/rubyruins" className="link color-one">@rubyruins.</a></p>
+							<p className="main-content">In my free time, I love to contribute to open source and work on my side projects. I'm also a featured writer on Wattpad, where my high fantasy novels have collectively amassed over half a million reads. You can find my work <a href="https://www.wattpad.com/user/rubyruins" className="link color-one">@rubyruins.</a></p>
 						</div>
 						<div className="col-lg-6 col-md-6">
 							<p className="main-content">
-								I'm actively looking for internships and opportunities in machine learning + web dev. Do feel free to get in touch! The fastest way to contact me is by email at <br></br> <a href="https://github.com/rubyruins" className="link color-one">soumyaparekh.me@gmail.com. </a> 
+								I'm actively looking for internships and opportunities in the field of machine learning and deep learning. Do feel free to get in touch! The fastest way to contact me is by email at <br></br> <a href="mailto:soumyaparekh.me@gmail.com" className="link color-one">soumyaparekh.me@gmail.com. </a> 
 							</p>
 						</div>
 					</div>

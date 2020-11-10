@@ -3,7 +3,7 @@ import React from 'react';
 function showGithub(g) {
 	if (g) {
 		return (
-			<span className="pr-3"><a href={g}><i className="fab fa-github"></i></a></span>
+			<span className="pr-3"><a href={g} target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a></span>
 		)
 	}
 }
@@ -11,7 +11,7 @@ function showGithub(g) {
 function showUrl(l) {
 	if (l) {
 		return (
-			<span><a href={l}><i className="fas fa-external-link-alt"></i></a></span>
+			<span><a href={l} target="_blank" rel="noreferrer"><i className="fas fa-external-link-alt"></i></a></span>
 		)
 	}
 }

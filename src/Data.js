@@ -12,7 +12,7 @@ const projects = [
 		title: "coursearch", 
 		content: "A one stop solution to navigate the sea of online courses.",
 		id: "p12",
-		github: "https://github.com/RitikMody/Coursearch",
+		github: "https://github.com/rubyruins/Coursearch",
 		url:"https://coursearch.herokuapp.com/",
 		tags: ["selenium", "scrapy", "pandas", "flask"],
 		categories: "misc fulldev"
@@ -132,7 +132,7 @@ const featured = [
 		title: "coursearch", 
 		content: "A one stop solution to navigate the sea of online courses.",
 		id: "f5",
-		github: "https://github.com/RitikMody/Coursearch",
+		github: "https://github.com/rubyruins/Coursearch",
 		url:"https://coursearch.herokuapp.com/",
 		tags: ["selenium", "scrapy", "pandas", "flask"],
 		categories: "misc fulldev"
@@ -243,8 +243,8 @@ const experience = [
 	{
 		title: "Machine Learning Intern | RIIDL Somaiya Vidyavihar",
 		date: "June 2020 - Present",
-		content: ["A research project which is an ML-based informed intervention for Crowdsourcing based Optimisation of Medical resources attending demand equalisation (COMRADE) for COVID 19 treatment."],
-		tech: "Pandas, Numpy, Matplotlib, Flask and Streamlit",
+		content: ["Worked on COMRADE, an ML-based informed intervention for crowdsourcing based optimisation of medical resources attending demand equalisation for COVID 19 treatment.", "Responsible for cleaning, processing and analysing data, drawing important inferences and presenting findings. Designed dashboards and graphs for the web application."],
+		tech: "Pandas, Numpy, Plotly Express and Flask.",
 		github: "",
 		url: "",
 		id: "i4"
@@ -252,7 +252,7 @@ const experience = [
 	{
 		title: "UI Lead and Data Analyst | KJSCE SDC",
 		date: "January 2020",
-		content: ["Worked on Copinion, a psychometric test to analyse and observe personality traits of over 500 engineering students."],
+		content: ["Worked on Copinion, a psychometric test to analyse and observe personality traits of over 500 engineering students.", "Designed questions for the psychometric test based on the OCEAN model after close consultation and in depth research. Led the team to develop the user interface for the platform. Also analyzed and presented our findings to observe common personality traits in our target audience."],
 		tech: "HTML, CSS, Material Design Bootstrap, PHP, Pandas and Seaborn.",
 		github: "",
 		url: "http://co-opinion.herokuapp.com/",
@@ -279,7 +279,7 @@ const organizations = [
 	{
 		title: "Summer Camp Mentor, The Young Writers Initiative",
 		date: "July 2020 - August 2020",
-		content: "The Young Writers Initiative's Mentorship Program is an 8 week long summer program designed as a mentorship and a summer camp combined for writing. It is free and accessible for everyone. Part of the team of 7 accomplished writing mentors, who each mentored one mentee for 2 months. ",
+		content: "The Young Writers Initiative's Mentorship Program is an 8 week long summer program designed as a mentorship and a summer camp combined for writing. It is free and accessible for everyone. I was part of the team of 7 accomplished writing mentors, who each mentored one mentee for 2 months. ",
 		url: "https://www.tywi.org/mentorship-program.html",
 		id: "o3"
 	},

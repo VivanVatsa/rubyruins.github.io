@@ -24,10 +24,10 @@
 }
 
 [data-theme = "star"] {
-	--background-primary: #1a1919;
+	--background-primary: #202020;
 	--background-secondary:#000000;
 	--background-tertiary: #000000;
 	--font-primary: #ebebeb;
 	--font-secondary: #b3b3b3;
-	--color-one: #983be4;
+	--color-one: #846df7;
 }
