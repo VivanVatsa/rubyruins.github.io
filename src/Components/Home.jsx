@@ -51,7 +51,7 @@ function Home() {
 					</div>
 				</div>
 				<div className="section py-5" id="experience">
-					<h2 className="heading section-heading">Professional <strong className="color-one-only">experience</strong></h2>
+					<h2 className="heading section-heading">Work <strong className="color-one-only">experience</strong></h2>
 					{/* <h5 className="heading subsection-heading link color-two-only">Internships</h5> */}
 					{experience.map(item => (
 						<Experience
