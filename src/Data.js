@@ -27,13 +27,13 @@ const projects = [
 		categories: "mldl"
 	},
 	{
-		title: "copinion", 
-		content: "A psychometric test to analyse common traits of engineering students.",
+		title: "imagescrape", 
+		content: "Build multiclass image datasets from the command line.",
 		id: "p10",
-		github: "http://co-opinion.herokuapp.com/",
-		url:"http://co-opinion.herokuapp.com/",
-		tags: ["php", "python", "pandas", "seaborn"],
-		categories: "fulldev misc"
+		github: "https://github.com/rubyruins/imagescrape",
+		url:"",
+		tags: ["python", "selenium", "requests", "pillow"],
+		categories: "misc"
 	},
 	{
 		title: "music recs", 
@@ -147,18 +147,9 @@ const featured = [
 		categories: "mldl"
 	},
 	{
-		title: "copinion", 
-		content: "A psychometric test to analyse common traits of engineering students.",
-		id: "f3",
-		github: "http://co-opinion.herokuapp.com/",
-		url:"http://co-opinion.herokuapp.com/",
-		tags: ["php", "python", "pandas", "seaborn"],
-		categories: "fulldev misc"
-	},
-	{
 		title: "music recs", 
 		content: "Recommending music through collaborative filtering.",
-		id: "f2",
+		id: "f3",
 		github: "https://github.com/rubyruins/music-recs",
 		url:"",
 		tags: ["pandas", "numpy", "tkinter"],
@@ -167,11 +158,20 @@ const featured = [
 	{
 		title: "driver drowsiness detection", 
 		content: "A warning system to alert drowsy or tired drivers.",
-		id: "f1",
+		id: "f2",
 		github: "https://github.com/rubyruins/driver-drowsiness-detection",
 		url:"",
 		tags: [ "opencv", "dlib", "tkinter"],
 		categories: "mldl"
+	},
+	{
+		title: "imagescrape", 
+		content: "Build multiclass image datasets from the command line.",
+		id: "f1",
+		github: "https://github.com/rubyruins/imagescrape",
+		url:"",
+		tags: ["python", "selenium", "requests", "pillow"],
+		categories: "misc"
 	},
 ];
 
