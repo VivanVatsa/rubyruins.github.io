@@ -4,16 +4,16 @@ function showLinks(pg) {
 	if (pg === '/') {
 		return (
 			<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li className="nav-item">
+				<li className="nav-item mb-0">
 					<a className="nav-link" href="#featured">Projects</a>
 				</li>
-				<li className="nav-item">
+				<li className="nav-item mb-0">
 					<a className="nav-link" href="#experience">Experience</a>
 				</li>
-				<li className="nav-item">
+				<li className="nav-item mb-0">
 					<a className="nav-link" href="#skills">Skills</a>
 				</li>
-				<li className="nav-item">
+				<li className="nav-item mb-0">
 					<a className="nav-link" href="#about">About</a>
 				</li>
 			</ul>
@@ -34,7 +34,7 @@ function Navbar() {
 					<a className="navbar-brand pl-4" href="/"><span role="img" aria-label="home"><strong>Soumya Parekh</strong></span></a>
 					{showLinks(page)}
 				</div>
-				<li className="navbar-brand ml-auto toggler"><i className="far fa-sun fa-3x"></i></li>
+				<li className="navbar-brand ml-auto toggler mb-0"><i className="far fa-sun fa-3x"></i></li>
 			</nav>
 	);
 }

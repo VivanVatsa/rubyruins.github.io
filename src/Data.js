@@ -1,5 +1,14 @@
 const projects = [
 	{
+		title: "newsentity", 
+		content: "Named Entity Recognition in news articles.",
+		id: "p14",
+		github: "https://github.com/rubyruins/newsentity",
+		url:"https://newsentity.herokuapp.com/",
+		tags: ["nltk", "plotly", "streamlit", "pandas"],
+		categories: "mldl"
+	},
+	{
 		title: "fast colorization", 
 		content: "Colorization of grayscale images with CNNS.",
 		id: "p13",
@@ -18,11 +27,11 @@ const projects = [
 		categories: "misc fulldev"
 	},
 	{
-		title: "characterwise user sentiment", 
-		content: "Analyse user sentiments from book comments by character.",
+		title: "sentifluent", 
+		content: "Dashboard for character targeted sentiment analysis.",
 		id: "p11",
-		github: "https://github.com/rubyruins/characterwise-user-sentiment",
-		url:"",
+		github: "https://github.com/rubyruins/sentifluent",
+		url:"https://share.streamlit.io/rubyruins/sentifluent/sentiment.py",
 		tags: ["selenium", "pandas", "nlp", "matplotlib"],
 		categories: "mldl"
 	},
@@ -58,7 +67,7 @@ const projects = [
 		content: "Allows users to create and vote for their favourite products.",
 		id: "p7",
 		github:"https://github.com/rubyruins/producthunt-clone",
-		url:"",
+		url:"https://product-hunt-python.herokuapp.com/",
 		tags: ["django", "mySQL", "bootstrap"],
 		categories: "fulldev"
 	},
@@ -138,11 +147,11 @@ const featured = [
 		categories: "misc fulldev"
 	},
 	{
-		title: "characterwise user sentiment", 
-		content: "Analyse user sentiments from book comments by character.",
+		title: "sentifluent", 
+		content: "Dashboard for character targeted sentiment analysis.",
 		id: "f4",
-		github: "https://github.com/rubyruins/characterwise-user-sentiment",
-		url:"",
+		github: "https://github.com/rubyruins/sentifluent",
+		url:"https://share.streamlit.io/rubyruins/sentifluent/sentiment.py",
 		tags: ["selenium", "pandas", "nlp", "matplotlib"],
 		categories: "mldl"
 	},
@@ -232,6 +241,15 @@ const skills = [
 
 const experience = [
 	{
+		title: "Data Science Intern | Specrom Analytics",
+		date: "January 2021 - Present",
+		content: ["Worked on a press release distrubtion problem to match articles with potential journalists to cover them.", "Specrom Analytics is  an AI focused consulting firm offering products and services based on web scraping, data analytics, text mining and NLP. They offer cloud based Data Extraction and Web Scraping services for all kinds of use cases such as media monitoring, social listening, lead generation, SEO etc."],
+		tech: "NLTK, Pandas, Streamlit and Plotly Express.",
+		github: "https://github.com/rubyruins/newsentity/tree/dev",
+		url: "",
+		id: "i6"
+	},
+	{
 		title: "Web Development Team | Orion Racing India",
 		date: "August 2020 - Present",
 		content: ["Designed and developed the official website for Orion Racing India.", "Orion Racing India is a student run, non-profit racing team based in K.J.Somaiya College Of Engineering, Vidyavihar, Mumbai. They develop, design and manufacture a formula style car to take part in International Design Competitions organized by Formula SAE, like Formula Student Germany."],
@@ -264,7 +282,7 @@ const experience = [
 		content: ["Learned the Django framework and implemented it by creating a polls app, a blog, and a ProductHunt clone for searching and curating new products in one place."],
 		tech: "Django, SQLite, HTML, Bootstrap and Javascript.",
 		github: "https://github.com/rubyruins/producthunt-clone",
-		url: "",
+		url: "https://product-hunt-python.herokuapp.com/",
 		id: "i2"
 	},
 	// {
@@ -299,6 +317,11 @@ const organizations = [
 ];
 
 const certifications = [
+	{
+		title: "30 Days of Google Cloud | Google Cloud, Qwiklabs",
+		courses: ["Cloud Engineering Track", "Data Science & Machine Learning Track"],
+		id: "c4"
+	},
 	{
 		title: "Natural Language Processing | Deeplearning.ai, Coursera",
 		courses: ["Natural Language Processing with Probabilistic Models", "Natural Language Processing with Classification and Vector Spaces"],

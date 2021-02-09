@@ -9,7 +9,7 @@ function Footer() {
 				<span className="mx-0 px-2 nav-link" style={{display: 'inline'}}><a href="https://github.com/rubyruins" target="_blank" rel="noreferrer">GITHUB</a></span>
 				<span className="mx-0 px-2 nav-link" style={{display: 'inline'}}><a href="https://www.linkedin.com/in/soumya-parekh/" target="_blank" rel="noreferrer">LINKEDIN</a></span>
 				<br></br>
-				<p className="custom-tag">Made with <i className="fa fa-heart"></i> and <i className="fab fa-react"></i> © 2020 rubyruins.</p>
+				<p className="custom-tag">Made with <i className="fa fa-heart"></i> and <i className="fab fa-react"></i> © {new Date().getFullYear()} rubyruins.</p>
 			</footer>
 	);
 }
