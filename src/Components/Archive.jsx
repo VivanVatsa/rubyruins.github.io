@@ -11,7 +11,7 @@ function Archive() {
 				<div className="section py-5 page-loader">
 					<Preloader />
 				</div>
-				<div className="section" id="projects">
+				<div className="section py-5" id="projects">
 					<h2 className="heading section-heading">Everything <strong className="color-one-only">else</strong></h2>
 					<p className="main-content">A comprehensive list of all my work.</p>
 					<div className="button-group filters-button-group">
